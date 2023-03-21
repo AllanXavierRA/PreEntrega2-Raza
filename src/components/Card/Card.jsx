@@ -1,3 +1,5 @@
+import { NavLink, } from 'react-router-dom'
+
 
 const Card = (props) => {
 
@@ -6,14 +8,13 @@ const Card = (props) => {
     
   return (
     <>
-  <div className="card">
+  <NavLink to={`../item/${product.id}`} className="card">
     <div className="image">
       <img src={product.images}/>
     </div>
     <div className="content">
       <div className="header">{product.title}</div>
       <div className="meta">
-        <a>Friends</a>
       </div>
       <div className="description">{product.description}</div>
     </div>
@@ -23,7 +24,7 @@ const Card = (props) => {
         {product.price}
       </span>
     </div>
-  </div>
+  </NavLink>
     </>
   )
 }
