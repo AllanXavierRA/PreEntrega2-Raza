@@ -1,0 +1,14 @@
+.icono{
+    color: white;
+}
+
+.icono::before {
+    content: '1';
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.2em 0.4em;
+  }
+
