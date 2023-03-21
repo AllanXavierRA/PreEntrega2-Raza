@@ -9,7 +9,7 @@ const Cartwidget = (props) => {
         <Menu.Item as='a'>
             <Icon name='shopping cart' size='large'/>
             <Label color='red' floating>
-            22
+            {count}
             </Label>
         </Menu.Item>
     </>
